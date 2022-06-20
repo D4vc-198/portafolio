@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --text-color-white: #FFFFFF;
+    --text-color: #07bef5;
+    --text-color-default: #dadada;
+    --text-color-green:#1AD969;
+    --body-background-1: #121E27;
+    --body-background-2: #060E15;
+    --nav-background: rgba(6, 14, 21, 0.8);
+    --body-skills-background: #0D314A;
+    --body-skills-background-2: #171835;
+    --card-skills-background: #171321;
+    --card-hoobie-backgrond: #30333a;
+    --card-hoobie-hover:rgb(14, 68, 139);
+    --card-academic-background: #060826;
+    --border-bottom-html: #FF5722;
+    --border-bottom-css: #2196F3;
+    --border-bottom-javascript: #FFDF00;
+    --border-bottom-typescript: #2D6FB7;
+    --border-bottom-angular: #D2002F;
+    --border-bottom-unity: #838181;
+    --border-bottom-c-sharp: #782379;
+    --border-bottom-python: #3870A1;
+    --border-bottom-git: #e03704;
+    --footer-animal-jump: #07B148;
+    --footer-taano-puzzle: #FF4700;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--body-background-1);
+    color: var(--text-color-default);
+}
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 100px;
+}
+
+section{
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+/*header*/
+
+.nav-bar{
+    box-sizing: border-box;
+    background-color: var(--nav-background);
+    width: 100%;
+    top: 0;
+    right: 0;
+    color: var(--text-color-white);
+    display: flex;
+    padding: 15px 0px;
+    border-bottom: 4px solid var(--text-color-default);
+    z-index: 2;
+}
+
+.name-logo{
+    display: inline-block;
+    width: 60%;
+    padding: 0px 30px;
+    opacity: 100%;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a:hover{
+    color: var(--text-color-green);
+}
+/*Bienvenido section*/
+
+.area, .area-inicio{
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 90%;
+    height: 100vh;
+    z-index: 1;
+    /* position: fixed; */
+    position: absolute;
+    
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.bienvenido-section {
+    background: var(--body-background-1);
+    font-weight: bold;
+}
+
+.bienvenido-container{
+    display: flex;
+}
+
+.bienvenido-container h1{
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+.name-color{
+    color: var(--text-color-green);
+}
+
+hr{
+    width: 11vh;
+    margin: 25px 0;
+    border: 2px solid #00E076;
+}
+
+.social-links{
+    width: 70%;
+    margin: 0 0 50px 0;
+    font-weight: 100;
+}
+
+.social-links a{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-color-default);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-links a:hover{
+    color: var(--text-color-green);
+}
+
+.btn{
+    width: 20vh;
+    text-align: center;
+    padding: 15px 5px;
+    border: 2px solid var(--text-color-green);
+    color: var(--text-color-green);
+    font-weight: 100;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--text-color-green);
+    color: #000;
+}
+
+
+
+
+.bienvenido-nombre{
+    display: inline-block;
+    margin: 0 auto;
+    width: 40vh;
+    height: auto;
+    padding: 60px 0 0 0;
+    z-index: 1;
+}
+.bienvenido-imagen{
+    display: inline-block;
+    margin: 0 auto;
+    width: 80vh;
+    height: 50px;
+}
+
+.bienvenido-imagen img{
+    width: 100%;
+}
+
+.bienvenido-info{
+    display: inline-block;
+    margin: 0 auto;
+    width: 60vh;
+    height: 50px;
+    padding: 60px 0 0 0;
+}
+
+.bienvenido-info h2{
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+
+/*about-section*/
+
+.about-section{
+    background: var(--body-background-2);
+    text-align: center;
+    height: 100vh;
+    text-align: end;
+}
+
+
+.presentation-text, .academic-card-title{
+    color: var(--text-color-green);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.text-container{
+    text-align: justify;
+    width: 75%;
+    line-height: 1.5;
+}
+
+.text-container img{
+    width: 15%;
+    height: auto;
+    float: left;
+    margin-right: 2.5rem;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+
+.about{
+    padding: 20 0;
+    text-align: initial;
+    display: inline-block;
+    width: 90%;
+}
+
+.card-text-title{
+    font-size: 3em;
+    width: 100%;
+    margin: 50px auto;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.personal-info-container{
+    display: flex;
+    margin: 40px 0 20px 0;
+}
+
+.personal-info-container h1{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.personal-info{
+    width: 45%;
+}
+
+.personal-info ul{
+    margin: 30px 0;
+}
+
+.personal-detail-item{
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+
+.personal-detail-item-1{
+    font-weight: bold;
+    width: 30vh;
+}
+
+.personal-detail-item-2{
+    text-align: left;
+}
+
+a:link, nav a:link, .personal-info-container a:link,.btn-curriculum a:link, a[href^="mailto:"]{
+    text-decoration: none;
+    color: var(--text-color-default);
+}   
+
+nav a:visited, .personal-info-container a:visited, .btn-curriculum a:visited, a[href^="mailto:"] {
+    color: var(--text-color-default);
+}
+ 
+.personal-info-container a:hover, .info-p:hover {
+    cursor: pointer;
+    color: var(--text-color-green);
+}
+
+.personal-hoobies{
+    width: 40%;
+    margin: 0 0 0 100px;
+}
+
+.hoobie-card{
+    margin: 10px 10px;
+    padding: 10px 5px;
+    text-align: center;
+    width: 11vh;
+    height: 10vh;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--text-color-green);
+}
+
+.hoobie-card:hover{
+    transform: scale(1.15);
+    color: var(--text-color-default);
+}
+
+.hoobie-card p{
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    margin: 8px 0 0 0 ;
+}
+
+.hoobie-card img{
+    width: 40%;
+}
+
+
+.skills-section{
+    display: flex;
+    height: 100vh;
+    background: var(--body-background-2);
+}
+
+
+.h2-title{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-container, .project-container{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.academic-container{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.academic-card-container{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.academic-card{
+    width: 30vh;
+    height: 30vh;
+    display: inline-block;
+    overflow: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    color: var(--body-background);
+    background: var(--body-background-1);
+    will-change: transform;
+    transition: transform 450ms;
+    cursor: pointer;
+}
+
+.alura-logo{
+    margin: 20px 0;
+    width: 75%;
+}
+
+.unity-logo{
+    width: 86%;
+    margin: 55px 0;
+}
+
+.hackademy-logo{
+    width: 54%;
+    margin: 15px 0;
+}
+
+.freecodecamp-logo{
+    width: 60%;
+    margin: 30px 0
+}
+
+.academic-text-card{
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-size: 15px;
+}
+
+
+.html{
+    border-bottom: 5px solid var(--border-bottom-html);
+}
+.css{
+    border-bottom: 5px solid var(--border-bottom-css);
+}
+.javascript{
+    border-bottom: 5px solid var(--border-bottom-javascript);
+}
+.typescript{
+    border-bottom: 5px solid var(--border-bottom-typescript);
+}
+.angular{
+    border-bottom: 5px solid var(--border-bottom-angular);
+}
+.unity{
+    border-bottom: 5px solid var(--border-bottom-unity);
+}
+
+.c-sharp{
+    border-bottom: 5px solid var(--border-bottom-c-sharp);
+}
+
+.python{
+    border-bottom: 5px solid var(--border-bottom-python);
+}
+
+.git{
+    border-bottom: 5px solid var(--border-bottom-git);
+}
+
+.skill-item{
+    background: var(--card-skills-background-2);
+    border-radius: 15px;
+    width: 20vh;
+    height: 20vh;
+    display: inline-block;
+    margin: 10px 15px;
+    overflow: auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+    color: var(--text-color-white);
+    will-change: transform;
+    transition: transform 450ms;
+    cursor: pointer;
+}
+
+.skill-item p{
+    font-size: 1em;
+    margin: 12px 0 0 0;
+}
+
+.skill-item img{
+    width: 40%;
+    padding: 5px 0;
+}
+
+.skill-item:hover, .academic-card:hover{
+    transition: transform 150ms;
+    transform: translateY(-10px);
+    border: 2px solid var(--text-color-green);
+    border-radius: 0;
+}
+
+.experiencia-section{
+    background: var(--body-background-2);
+    height: auto;
+}
+
+.proyectos-container{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tarjeta-proyecto{
+    display: inline-block;
+    width: 35vh;
+    height: 50vh;
+    background: var(--body-background-1);
+    margin: 30px 30px;
+}
+
+.imagen-tarjeta{
+    position: relative;
+}
+
+.tarjeta-proyecto-img{
+    width: 100%;
+}
+
+.contenido-tarjeta{
+    text-align: center;
+}
+
+.contenido-tarjeta h3{
+    color: var(--text-color-green);
+    font-size: 20px;
+    padding: 15px 10px;
+}
+
+.descripcion-proyecto{
+    width: 100%;
+    height: 15vh;
+}
+
+.contenido-tarjeta p{
+    margin: 10px 0 0 0;
+    text-align: center;
+    line-height: 1.3;
+    padding: 5px 11px;
+}
+
+.card-footer{
+    width: auto;
+    height: 50px;
+    background: var(--text-color-green);
+    position: relative;
+    margin: 10px auto 0 auto;
+    /* margin-bottom: -23px; */
+}
+
+.card-footer-icon{
+    width: 30px;
+    margin: 10px 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card-footer-icon:hover{
+    transform: scale(1.2);
+}
+
+.contacto-section{
+    height: auto;
+    padding:30px 0;
+}
+
+.contacto-contenedor{
+    display: flex;
+}
+
+.formulario{
+    width: 85%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.formulario-contenedor{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-data{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 15px;
+    border: none;
+    outline-style: none;
+    background-color: var(--body-background-2);
+    color: var(--text-color-default);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-area-resize{
+    resize: none;
+}
+
+.btn-contacto{
+    width: 100%;
+    text-align: center;
+    padding: 15px 5px;
+    border: 2px solid var(--text-color-green);
+    color: var(--text-color-green);
+    background: none;
+    font-weight: 100;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn-contacto:hover{
+    background: var(--text-color-green);
+    color: var(--body-skills-background-2);
+}
+
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 499px){
+    .sticky{
+        position: relative;
+    }
+
+    section{
+        padding: 0;
+    }
+
+    .area{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .area-inicio{
+        width: 100%;
+        height: 85vh;
+    }
+
+    .social-links{
+        width: 100%;
+        font-size: 35px;
+    }
+    .social-links a{
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .bienvenido-info{
+        display: none;
+    }
+
+    .about{
+        display: inline;
+    }
+
+    .personal-info{
+        width: auto;
+    }
+
+    .text-container{
+        width: auto;
+    }
+
+    .bienvenido-section{
+        height: 85vh;
+    }
+
+    .about-section, .personal-info-container, .personal-detail-item, .skills-section, .personal-hoobies{
+        display: block;
+        height: auto;
+        padding: 0 5px;
+    }
+
+    .personal-detail-item{
+        margin: 0 0 20px 0;
+    }
+    .personal-detail-item-1{
+        margin: 0 0 5px 0;
+    }
+
+    .personal-hoobies{
+        margin: 0 0;
+        width: auto;
+    }
+
+    .hoobie-card{
+        margin: 0 25px 15px 0;
+    }
+
+    .btn{
+        margin: 0 auto;
+        padding: 25px 0;
+        margin: 0 auto;
+        width: 30vh;
+    }
+
+    .academic-card{
+        width: 15vh;
+        height: 15vh;
+    }
+    .alura-logo{
+        width: 60%;
+    }
+    
+    .hackademy-logo{
+        width: 44%;
+    }
+
+    .freecodecamp-logo{
+        width: 55%;
+        margin: 18px auto;
+    }
+    .unity-logo{
+        width: 84%;
+        margin: 33px auto;
+    }
+
+    .academic-card-title{
+        display: block;
+    }
+    
+    .skill-item{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .tarjeta-proyecto{
+        height: 45vh;
+    }
+
+    .contenido-tarjeta h3{
+        font-size: 1.6em;
+    }
+    .contenido-tarjeta p{
+        font-size: 1.4em;
+    }
+
+    .formulario-contenedor{
+        width: 100%;
+    }
+}
