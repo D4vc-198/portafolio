@@ -86,7 +86,7 @@ nav ul li a:hover{
 /*Bienvenido section*/
 
 .area, .area-inicio{
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+
     width: 90%;
     height: 100vh;
     z-index: 1;
@@ -110,7 +110,7 @@ nav ul li a:hover{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--text-color-green);
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -278,6 +278,7 @@ hr{
     width: 60vh;
     height: 50px;
     padding: 60px 0 0 0;
+    z-index: 2;
 }
 
 .bienvenido-info h2{
