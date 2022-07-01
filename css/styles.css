@@ -699,7 +699,16 @@ nav a:visited, .personal-info-container a:visited, .btn-curriculum a:visited, a[
 
 @media only screen and (max-width: 499px){
     .sticky{
-        position: relative;
+        position: fixed;
+        top: 0;
+    }
+
+    .name-logo{
+        display: none;
+    }
+
+    nav{
+        margin: 0 auto;
     }
 
     section{
