@@ -679,7 +679,31 @@ nav a:visited, .personal-info-container a:visited, .btn-curriculum a:visited, a[
 }
 
 
+/*Efecto scroll*/
+.fadeTop{
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
 
+/*DERECHA*/
+.fadeRight {
+    opacity: 0;
+    transform: translate(10vh, 0vh);
+    transition: all 1s;
+  }
+
+  /*IZQUIERDA*/
+  .fadeLeft {
+    opacity: 0;
+    transform: translate(-10vh, 0vh);
+    transition: all 1s;
+  }
+
+.visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 @keyframes animate {
 
