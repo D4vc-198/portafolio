@@ -20,7 +20,7 @@
     --border-bottom-css: #2196F3;
     --border-bottom-javascript: #FFDF00;
     --border-bottom-typescript: #2D6FB7;
-    --border-bottom-angular: #D2002F;
+    --border-bottom-reactjs: #61DBFB;
     --border-bottom-unity: #838181;
     --border-bottom-c-sharp: #782379;
     --border-bottom-python: #3870A1;
@@ -514,7 +514,7 @@ nav a:visited, .personal-info-container a:visited, a[href^="mailto:"] {
     border-bottom: 5px solid var(--border-bottom-typescript);
 }
 .angular{
-    border-bottom: 5px solid var(--border-bottom-angular);
+    border-bottom: 5px solid var(--border-bottom-reactjs);
 }
 .unity{
     border-bottom: 5px solid var(--border-bottom-unity);
